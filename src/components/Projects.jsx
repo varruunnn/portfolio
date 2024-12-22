@@ -18,7 +18,7 @@ const Projects = () => {
                         Secure your spot, sharpen your skills, and get ready to dominate—because at BigGameWars, every
                         match could makse you a legend.
                         <br />
-                        NOTE: This is under development but you can check the website ":)".
+                        NOTE: Payment is under development but you can check the website ":)".
                         <br />
                         FOR MORE CHECKOUT READMEfile
                         <br />
