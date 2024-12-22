@@ -1,0 +1,47 @@
+.about-section {
+    padding: 4rem 2rem;
+    background-color: #f8fafc; 
+    color: #3d69b0; 
+    text-align: center;
+    line-height: 1.8;
+  }
+  
+  .about-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    color: #f97316;
+    letter-spacing: 1.5px;
+  }
+  
+  .about-section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+    color: #84a7d9;
+    line-height: 1.8;
+  }
+  .about-section p:hover{
+    color: #f97316;
+  }
+  .about-section p strong {
+    color: #f97316; 
+  }
+  
+  .about-section p span {
+    font-style: italic;
+    color: #ea580c;
+  }
+  
+  @media (max-width: 768px) {
+    .about-section h2 {
+      font-size: 2rem;
+    }
+  
+    .about-section p {
+      font-size: 1rem;
+    }
+  }
+  
