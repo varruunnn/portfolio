@@ -38,9 +38,11 @@
   }
   
   .project-card p {
+    font-family: 'Courier New', Courier, monospace;
     font-size: 1rem;
     color: #e5e7eb;
   }
+  
   .links{
     display: flex;
     justify-content: center;
