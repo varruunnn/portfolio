@@ -11,10 +11,8 @@ const Projects = () => {
           <img src="" alt="" />
                     <p>
                       At <strong>BigGameWars</strong>, we bring the most
-                      intense online tournaments for <span style={{ color: "#FF4655" }}>Valorant</span> and{" "}
+                      intense online tournaments for <span style={{ color: "#FF4655" }}>Valorant</span> and
                       <span style={{ color: "#00A896" }}>BGMI</span> players who are hungry for victory.
-                      <strong>
-                        {" "}
                         Secure your spot, sharpen your skills, and get ready to dominate—because at BigGameWars, every
                         match could makse you a legend.
                         <br />
@@ -23,7 +21,6 @@ const Projects = () => {
                         FOR MORE CHECKOUT READMEfile
                         <br />
                         MADE WITH MERN STACK
-                      </strong>
                     </p>
 
           <a className="links" href="https://github.com/varruunnn/GamingArena">GITHUB</a>

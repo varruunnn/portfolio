@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Iceland&display=swap');
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -7,6 +8,9 @@ body {
 }
 
 .App {
+  font-family: "Iceland", serif;
+  font-weight: 400;
+  font-style: normal;
   display: flex;
   flex-direction: column;
   align-items: center;

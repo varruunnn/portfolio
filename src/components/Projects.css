@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Iceland&display=swap');
 .projects-section {
     background: #1f2937;
     color: #f3f4f6;
+    font-family: "Iceland", serif;
+    font-weight: 400;
+    font-style: normal;
   }
   
   .projects-section h2 {
@@ -38,8 +42,10 @@
   }
   
   .project-card p {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1rem;
+    font-family: "Iceland", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.4rem;
     color: #e5e7eb;
   }
   

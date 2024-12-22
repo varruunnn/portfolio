@@ -12,7 +12,13 @@
     z-index: 1000;
     transition: background 0.3s ease-in-out;
   }
-
+  .navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    position: relative;
+    left: 10px;
+    color: #f97316;
+}
   .logo {
     font-size: 1.8rem;
     font-weight: bold;
@@ -31,7 +37,7 @@
     display: flex;
     gap: 2rem;
     list-style: none;
-    margin: 0;
+    margin: 30px;
     padding: 0;
   }
   
