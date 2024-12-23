@@ -1,46 +1,75 @@
 .contact-section {
-  padding: 4rem 2rem;
-  background: linear-gradient(135deg, #1e293b, #111827); 
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
   color: #ffffff;
   text-align: center;
-  border-radius: 10px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
 }
 
 .contact-section h2 {
-  font-size: 2.8rem;
-  font-weight: bold;
+  font-size: 2.5rem;
   margin-bottom: 2rem;
+  color: #ffffff;
   text-transform: uppercase;
-  color: #f97316;
-  letter-spacing: 2px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  position: relative;
+  z-index: 2;
+}
+
+.contact-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.5));
+  animation: rotate 20s linear infinite;
+  z-index: 1;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .slider-container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   overflow: hidden;
-  width: 100%;
-  max-width: 1000px;
   margin: 0 auto;
-  padding: 2rem 0;
-  background-color: #222831;
-  border-radius: 15px;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 2;
 }
 
 .slider {
   display: flex;
-  gap: 2rem;
-  animation: slide 10s cubic-bezier(0.25, 1, 0.5, 1) infinite;
-  transition: transform 0.5s ease-in-out;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  animation: slide 20s linear infinite;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10%);
+  }
 }
 
 .slider-item {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   padding: 1rem 2rem;
@@ -49,35 +78,73 @@
   color: #ffffff;
   text-decoration: none;
   background: linear-gradient(135deg, #475569, #6b7280);
-  border-radius: 30px;
-  transition: all 0.4s ease;
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 25px;
+  margin: 0.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  animation: bounce 3s infinite ease-in-out;
 }
 
 .slider-item i {
-  margin-right: 0.8rem;
+  margin-right: 0.5rem;
   font-size: 1.8rem;
 }
 
 .slider-item:hover {
-  background: linear-gradient(135deg, #f97316, #fb923c);
   transform: scale(1.2);
-  color: #ffffff;
-  box-shadow: 0px 12px 25px rgba(249, 115, 22, 0.6);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(135deg, #6b7280, #475569);
 }
 
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.github {
+  background: linear-gradient(135deg, #333333, #4a4a4a);
+}
+
+.twitter {
+  background: linear-gradient(135deg, #1da1f2, #0d74c6);
+}
+
+.instagram {
+  background: linear-gradient(135deg, #833ab4, #f77737);
+}
+
+.email {
+  background: linear-gradient(135deg, #6c757d, #495057);
+}
 
 @media (max-width: 768px) {
   .slider-item {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .slider-item i {
     font-size: 1.2rem;
-    padding: 0.8rem 1.5rem; 
   }
 }
 
 @media (max-width: 480px) {
+  .contact-section h2 {
+    font-size: 1.8rem;
+  }
+
   .slider-item {
-    font-size: 1rem;
     padding: 0.6rem 1rem;
-    text-align: center; 
+    font-size: 0.9rem;
+    margin: 0.4rem;
+  }
+
+  .slider-item i {
+    font-size: 1rem;
+    margin-right: 0.3rem;
   }
 }
